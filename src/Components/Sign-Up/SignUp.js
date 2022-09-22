@@ -2,8 +2,9 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import contents from "../../Static/data";
+import { contents } from "../../Static/data";
 import "./signup.css";
+import { Link } from "react-router-dom";
 
 const schema = yup.object().shape({
   fullname: yup.string().required().min(6),
@@ -55,6 +56,12 @@ const SignUp = () => {
 
         <button>SIGN UP</button>
       </form>
+      <p>
+        Have an account? <Link to="/signin">Sign In</Link>
+      </p>
+      <p>
+        <Link to="/">Back to Home</Link>
+      </p>
     </div>
   );
 };

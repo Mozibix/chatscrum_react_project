@@ -1,4 +1,4 @@
-const contents = {
+export const contents = {
   inputs: [
     {
       label: "Full Name",
@@ -18,4 +18,32 @@ const contents = {
   ],
 };
 
-export default contents;
+
+
+export const contents2 = {
+  inputs: [
+    {
+      label: "Full Name",
+      name: "fullname",
+      type: "text",
+    },
+    {
+      label: "Email",
+      name: "email",
+      type: "email",
+    },
+    {
+      label: "Project Name",
+      name: "text",
+      type: "text",
+    },
+  ],
+};
+
+ const UserData = {
+  fullname: "Liam Nussle",
+  usertype: "owner",
+  projectname: "Chatscrum",
+};
+
+export default UserData;
